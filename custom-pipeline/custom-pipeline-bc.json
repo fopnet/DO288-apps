@@ -9,7 +9,7 @@
             "type": "Git",
             "git": {
                 "uri": "https://github.com/fopnet/DO288-apps.git",
-                "ref": "custom-pipeline"
+                "ref": "master"
             },
             "contextDir": "books"
         },
