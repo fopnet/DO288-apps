@@ -11,8 +11,8 @@ pipeline {
 
     environment {
         //TODO: Customize these variables for your environment
-	DEV_PROJECT = "bamgvh-books-dev"
-	STAGE_PROJECT = "bamgvh-books-stage"
+	DEV_PROJECT = "bamgvh-movies-dev"
+	STAGE_PROJECT = "bamgvh-movies-stage"
 	APP_GIT_URL = "https://github.com/fopnet/DO288-apps"
 	NEXUS_SERVER = "http://nexus-common.apps.na45.prod.nextcle.com/repository/java"
 
