@@ -104,11 +104,13 @@ NEXUS_SERVER = "http://nexus-common.apps.na45.prod.nextcle.com/repository/nodejs
                 timeout(time: 60, unit: 'MINUTES') {
                     input message: "Promote to Staging?"
                 }
-                //TODO: Tag the books:latest image stream as books:stage
-            openshift.withCluster() {
-  openshift.tag("${DEV_PROJECT}/books:latest", "${STAGE_PROJECT}/books:stage")
- }
-	     }
+		script {
+                	//TODO: Tag the books:latest image stream as books:stage
+           		openshift.withCluster() {
+  				openshift.tag("${DEV_PROJECT}/books:latest", "${STAGE_PROJECT}/books:stage")
+	     		}
+		}
+	    }
         }
 
         stage('Deploy to Staging Env') {
