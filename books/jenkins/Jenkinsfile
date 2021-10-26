@@ -106,8 +106,7 @@ NEXUS_SERVER = "http://nexus-common.apps.na45.prod.nextcle.com/repository/nodejs
                 }
                 //TODO: Tag the books:latest image stream as books:stage
             openshift.withCluster() {
-  openshift.tag("${DEV_PROJECT}/books:latest", "${STAGE_PROJECT}/books:stage")
- }
+  		openshift.tag("${DEV_PROJECT}/books:latest", "${STAGE_PROJECT}/books:stage")
 	     }
         }
 
